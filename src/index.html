@@ -59,7 +59,7 @@
     <div class="section-hed">Tables</div>
     <div class="element-container">
     <% json.Tables.forEach(function(d){ %>
-      <div class="element">
+      <div class="element <%=d.Class%>">
         <img src="<%=d.Photo%>"></img>
         <div class="caption"><%=d.Caption%></div>
       </div>
@@ -71,7 +71,7 @@
     <div class="section-hed">Chairs</div>
     <div class="element-container">
     <% json.Chairs.forEach(function(d){ %>
-      <div class="element">
+      <div class="element wide">
         <img src="<%=d.Photo%>"></img>
         <div class="caption"><%=d.Caption%></div>
       </div>
@@ -83,7 +83,7 @@
     <div class="section-hed">Other works</div>
     <div class="element-container">
     <% json.Other.forEach(function(d){ %>
-      <div class="element">
+      <div class="element <%=d.Class%>">
         <img src="<%=d.Photo%>"></img>
         <div class="caption"><%=d.Caption%></div>
       </div>
@@ -104,7 +104,7 @@
     <div class="footer-hed">Contact me</div>
     <div class="icon"><a href="mailto:comets@comcast.net"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
     <div class="icon"><a href="tel:(111)111-1111"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
-    <div class="last-updated">Last updated on March 5, 2018</div>
+    <div class="last-updated">Last updated on March 10, 2018</div>
   </div>
 
   <script src="app.js" async></script>
