@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Dolly Spragins - Fine Furniture and Woodworking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="__sync_contentCategory" content="meterA">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600,700|Nanum+Myeongjo|PT+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cardo|EB+Garamond:600,700,800|Old+Standard+TT" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="top-images">
+    <div class="left-img"><img src="../assets/landing/dolly.jpg"></div>
+    <div class="right-img"><img src="../assets/landing/table.jpg"></div>
+  </div>
+
+  <div class="title-container">
+    <div class="title">Dolly Spragins Fine Furniture</div>
+    <div class="intro">
+      I design and build one of a kind furniture and sculpture here in my shop. Check out my work below. I would be happy to speak with you about the process of commissioning a piece or simply answer questions.
+    </div>
+    <div class="contact-me">
+      <div class="icon"><a href="mailto:comets@comcast.net"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+      <div class="icon"><a href="tel:(111)111-1111"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
+    </div>
+  </div>
+
+  <div id="stick-here"></div>
+  <div class="nav-container" id="stick-me">
+    <div class="link"><a href="#sculptures">Sculptures</a></div>
+    <div class="link"><a href="#tables">Tables</a></div>
+    <div class="link"><a href="#chairs">Chairs</a></div>
+    <div class="link"><a href="#other">Other works</a></div>
+    <div class="link"><a href="#artiststatement">Artist statement</a></div>
+  </div>
+  <div id="stick-ph"></div>
+
+  <div id="sculptures" class="section">
+    <div class="section-hed">Sculptures</div>
+    <div class="element-container">
+    <% json.Sculptures.forEach(function(d){ %>
+      <div class="element">
+        <img src="<%=d.Photo%>"></img>
+        <div class="caption"><%=d.Caption%></div>
+      </div>
+    <% }) %>
+    </div>
+  </div>
+
+  <div id="tables" class="section">
+    <div class="section-hed">Tables</div>
+    <div class="element-container">
+    <% json.Tables.forEach(function(d){ %>
+      <div class="element">
+        <img src="<%=d.Photo%>"></img>
+        <div class="caption"><%=d.Caption%></div>
+      </div>
+    <% }) %>
+    </div>
+  </div>
+
+  <div id="chairs" class="section">
+    <div class="section-hed">Chairs</div>
+    <div class="element-container">
+    <% json.Chairs.forEach(function(d){ %>
+      <div class="element">
+        <img src="<%=d.Photo%>"></img>
+        <div class="caption"><%=d.Caption%></div>
+      </div>
+    <% }) %>
+    </div>
+  </div>
+
+  <div id="other" class="section">
+    <div class="section-hed">Other works</div>
+    <div class="element-container">
+    <% json.Other.forEach(function(d){ %>
+      <div class="element">
+        <img src="<%=d.Photo%>"></img>
+        <div class="caption"><%=d.Caption%></div>
+      </div>
+    <% }) %>
+    </div>
+  </div>
+
+  <!-- <div id="statement-button"><span class="click-icon"><i class="fa fa-caret-down"></i></span>Meet the team</div> -->
+
+  <div id="artiststatement" class="section">
+    <div class="section-hed">Artist statement</div>
+    <div class="statement">
+      <%= t.include("partials/_statement.html") %>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer-hed">Contact me</div>
+    <div class="icon"><a href="mailto:comets@comcast.net"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+    <div class="icon"><a href="tel:(111)111-1111"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
+    <div class="last-updated">Last updated on March 5, 2018</div>
+  </div>
+
+  <script src="app.js" async></script>
+
+</body>
+</html>

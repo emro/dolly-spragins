@@ -1,0 +1,17 @@
+{
+  "year":"2018",
+  "sheets": ["15hdYgRBZ0h6nailZ0kdNXRcCOJMMlv5Jv4-9iisd9Iw"],
+  "docsID":"",
+  "production": true,
+  "embedded": false,
+  "s3": {
+    "stage": {
+      "bucket": "dollyspragins.com",
+      "path": "/"
+    },
+    "live": {
+      "bucket": "dollyspragins.com",
+      "path": "/"
+    }
+  }
+}
