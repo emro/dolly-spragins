@@ -10,6 +10,23 @@ require("./lib/social"); //Do not delete
 //   }
 // });
 
+var images = document.getElementsByTagName("img");
+for (var idx=0; idx<images.length; idx++){
+  var elem = images[idx];
+  elem.addEventListener("click",function(){
+    document.getElementsByClassName("overlay-image-container")[0].classList.add("active");
+    document.getElementById("overlay-image").classList.add("active");
+    document.getElementById("inner-overlay-image").innerHTML = "<img src="+this.src+"><img>";
+    document.body.classList.add('noscroll');
+  });
+}
+
+document.getElementById("closeme").addEventListener("click",function(){
+  document.getElementsByClassName("overlay-image-container")[0].classList.remove("active");
+  document.getElementById("overlay-image").classList.remove("active");
+  document.body.classList.remove('noscroll');
+});
+
 
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
