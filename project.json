@@ -7,11 +7,11 @@
   "s3": {
     "stage": {
       "bucket": "dollyspragins.com",
-      "path": "/"
+      "path": "/portfolio/"
     },
     "live": {
       "bucket": "dollyspragins.com",
-      "path": "/"
+      "path": "/portfolio/"
     }
   }
 }
