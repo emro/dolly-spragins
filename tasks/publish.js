@@ -64,9 +64,9 @@ module.exports = function(grunt) {
     };
     //strip slashes for safety
     bucketConfig.path = bucketConfig.path.replace(/^\/|\/$/g, "");
-    if (!bucketConfig.path) {
-      grunt.fail.fatal("You must specify a destination path in your project.json.");
-    }
+    // if (!bucketConfig.path) {
+    //   grunt.fail.fatal("You must specify a destination path in your project.json.");
+    // }
 
     // var creds = {
     //   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
