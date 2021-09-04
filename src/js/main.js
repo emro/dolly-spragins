@@ -1,15 +1,5 @@
 require("./lib/social"); //Do not delete
 
-// document.getElementById("statement-button").addEventListener("click",function(){
-//   if ($(this).find($(".fa")).hasClass("fa-caret-down")){
-//     document.getElementById("statement").classList.add("visible");
-//     $(this).find($(".fa")).removeClass('fa-caret-down').addClass('fa-caret-up');
-//   } else {
-//     document.getElementById("statement").classList.remove("visible");
-//     $(this).find($(".fa")).removeClass('fa-caret-up').addClass('fa-caret-down');
-//   }
-// });
-
 var images = document.getElementsByTagName("img");
 for (var idx=0; idx<images.length; idx++){
   var elem = images[idx];
@@ -55,15 +45,12 @@ function activate() {
   var sticker_ph = document.getElementById('stick-ph');
   var window_top = document.body.scrollTop;
   var div_top = document.getElementById('stick-here').getBoundingClientRect().top + window_top;
-  // var long = document.getElementById('long');
 
   if (window_top > div_top) {
       sticker.classList.add('fixed');
       sticker_ph.style.display = 'block'; // puts in a placeholder for where sticky used to be for smooth scrolling
-      // long.style.display = 'inline-block';
   } else {
       sticker.classList.remove('fixed');
       sticker_ph.style.display = 'none'; // removes placeholder
-      // long.style.display = 'none';
   }
 }

@@ -1,0 +1,52 @@
+[
+  {
+    "Photo": "../assets/tables/T6-1,2.jpg"
+  },
+  {
+    "Photo": "../assets/tables/T4-1,2.jpg"
+  },
+  {
+    "Photo": "../assets/tables/DeskCombo.jpg"
+  },
+  {
+    "Photo": "../assets/tables/OvalBackgammonTableCombo.jpg"
+  },
+  {
+    "Photo": "../assets/tables/TurtleTableCombo.jpg"
+  },
+  {
+    "Photo": "../assets/tables/NightTablesCombo.jpg"
+  },
+  {
+    "Photo": "../assets/tables/LacewoodChessTableCombo.jpg"
+  },
+  {
+    "Photo": "../assets/tables/LacewoodCoffeeTableCombo.jpg"
+  },
+  {
+    "Photo": "../assets/tables/FoamTableCombo.jpg"
+  },
+  {
+    "Photo": "../assets/tables/BugTable.jpg",
+    "Class": "wide"
+  },
+  {
+    "Photo": "../assets/tables/T10-1.jpg",
+    "Class": "wide"
+  },
+  {
+    "Photo": "../assets/tables/T10-2rotate.jpg",
+    "Class": "wide"
+  },
+  {
+    "Photo": "../assets/tables/T10-3rotate.jpg",
+    "Class": "wide"
+  },
+  {
+    "Photo": "../assets/tables/BackgammonTableCombo.jpg",
+    "Class": "wide"
+  },
+  {
+    "Photo": "../assets/tables/Sapele_Dining_table.jpg"
+  }
+]

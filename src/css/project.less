@@ -27,21 +27,32 @@ p {
   max-width: 800px;
   margin: auto;
   .element {
-    // .flex(0 0 48%);
     .flex(0 0 31%);
+    @media @mobile {
+      .flex(0 0 100%);
+    }
     margin: 20px 1%;
     img {
       max-width: 100%;
     }
     &.wide {
       .flex(0 0 48%);
+      @media @mobile {
+        .flex(0 0 100%);
+      }
     }
     &.narrow {
       .flex(0 0 23%);
+      @media @mobile {
+        .flex(0 0 100%);
+      }
     }
     &.pair {
       .flex(0 0 48%);
       background: darken(@light-gray,5%);
+      @media @mobile {
+        .flex(0 0 100%);
+      }
     }
   }
   padding-bottom: 50px;
@@ -61,10 +72,8 @@ p {
   max-width: 900px;
   margin: auto;
   border-bottom: 2px solid @dark-highlight;
-  // width: 80%;
   padding-top: 10px;
   margin: auto;
-  // margin-bottom: 30px;
   font-family: @headline;
   font-size: 20px;
   font-weight: 700;
@@ -126,13 +135,6 @@ img {
   margin-bottom: 100px;
 }
 
-// #statement {
-//   display: none;
-//   &.visible {
-//     display: block;
-//   }
-// }
-
 .caption {
   font-size: 14px;
   padding-top: 5px;
@@ -168,9 +170,8 @@ img {
   }
   .intro {
     font-family: @body;
-    font-size: 18px;
-    // font-weight: 600;
-    padding-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
     max-width: 600px;
     margin: auto;
   }
@@ -186,17 +187,15 @@ img {
 
 .nav-container {
   font-family: @headline;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
-  text-transform: uppercase;
   color: @dark-highlight;
   text-align: center;
-  padding: 15px 0 10px 0;
+  padding: 10px 0;
   background: @light-gray;
   .link {
     display: inline-block;
     padding: 0 10px;
-    // text-decoration: underline;
     cursor: pointer;
   }
 }
@@ -209,14 +208,11 @@ img {
 .footer-container {
   max-width: 730px;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 50px 15px 100px;
 }
 
 .fixed {
   position: fixed;
-  // background: #f2f2f2;
-  // background: white;
   -webkit-box-shadow: 0 0 6px 0 @dark-gray;
   -moz-box-shadow: 0 0 6px 0 @dark-gray;
   box-shadow: 0 0 6px 0 @dark-gray;
@@ -226,12 +222,15 @@ img {
   left: 0;
   right: 0;
   border-top: 0 !important;
-  @media @mobile {
-    padding-left: 10px;
-  }
 }
 
 #stick-ph {
   display: none;
-  height: 30px;
+  height: 53px;
+  @media @mobile {
+    height: 119px;
+  }
+  @media @phone-horiz {
+    height: 86px;
+  }
 }

@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600,700|Nanum+Myeongjo|PT+Serif" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cardo|EB+Garamond:600,700,800|Old+Standard+TT" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@200|News+Cycle|Old+Standard+TT" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 
@@ -31,16 +30,16 @@
   <div class="title-container">
     <div class="title">Dolly Spragins Fine Furniture</div>
     <div class="intro">
-      I design and build one of a kind furniture and sculpture here in my shop. Check out my work below. I would be happy to speak with you about the process of commissioning a piece or simply answer questions.
+      <p>I design and build one of a kind furniture and sculpture here in my shop. Check out my work below. I would be happy to speak with you about the process of commissioning a piece or simply answer questions.</p>
     </div>
     <div class="contact-me">
       <div class="icon"><a href="mailto:comets@comcast.net"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
-      <div class="icon"><a href="tel:(111)111-1111"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
     </div>
   </div>
 
   <div id="stick-here"></div>
   <div class="nav-container" id="stick-me">
+      <div class="link"><a href="#chopsticks">Chopsticks</a></div>
     <div class="link"><a href="#sculptures">Sculptures</a></div>
     <div class="link"><a href="#tables">Tables</a></div>
     <div class="link"><a href="#chairs">Chairs</a></div>
@@ -48,6 +47,18 @@
     <div class="link"><a href="#artiststatement">Artist statement</a></div>
   </div>
   <div id="stick-ph"></div>
+
+  <div id="chopsticks" class="section">
+    <div class="section-hed">Chopsticks</div>
+    <div class="element-container">
+    <% json.Chopsticks.forEach(function(d){ %>
+      <div class="element <%=d.Class%>">
+        <img src="<%=d.Photo%>"></img>
+        <div class="caption"><%=d.Caption%></div>
+      </div>
+    <% }) %>
+    </div>
+  </div>
 
   <div id="sculptures" class="section">
     <div class="section-hed">Sculptures</div>
@@ -97,8 +108,6 @@
     </div>
   </div>
 
-  <!-- <div id="statement-button"><span class="click-icon"><i class="fa fa-caret-down"></i></span>Meet the team</div> -->
-
   <div id="artiststatement" class="section">
     <div class="section-hed">Artist statement</div>
     <div class="statement">
@@ -109,8 +118,7 @@
   <div class="footer-container">
     <div class="footer-hed">Contact me</div>
     <div class="icon"><a href="mailto:comets@comcast.net"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
-    <div class="icon"><a href="tel:(111)111-1111"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
-    <div class="last-updated">Last updated on March 10, 2018</div>
+    <div class="last-updated">Last updated on September 3, 2021</div>
   </div>
 
   <script src="app.js" async></script>

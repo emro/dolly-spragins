@@ -1,0 +1,30 @@
+[
+  {
+    "Photo": "../assets/other/CDCabinetCombo.jpg"
+  },
+  {
+    "Photo": "../assets/other/EntertainmentCenterCombo.jpg"
+  },
+  {
+    "Photo": "../assets/other/Bench.jpg"
+  },
+  {
+    "Photo": "../assets/other/BedCombo.jpg"
+  },
+  {
+    "Photo": "../assets/other/ECCombo.jpg"
+  },
+  {
+    "Photo": "../assets/other/AssymetricalMirror.jpg"
+  },
+  {
+    "Photo": "../assets/other/ColumnMirror.jpg"
+  },
+  {
+    "Photo": "../assets/other/EightNoteMirror.jpg"
+  },
+  {
+    "Photo": "../assets/other/MusicMirrorCombo.jpg",
+    "Class": "wide"
+  }
+]
